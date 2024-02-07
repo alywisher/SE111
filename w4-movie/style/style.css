@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "narnia";
+    src: url(NarniaBLL.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+#main{
+    width: 1500px;
+    height: 1364px;
+    background-color: #F5F0EA;
+    border: 4px solid #54728C;
+}
+body, html{
+    display: flex;
+    justify-content: center;
+    background-color: #273D59;
+}
+#header{
+     text-align: center;
+     font-family: narnia;
+     color: #54728C;
+     text-shadow: 3px 2px #273D59;
+}
+#nav{
+    text-align: center;
+    border-bottom: 4px solid #54728C;
+}
+.navList{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 15px;
+   
+}
+#content{
+    height: 600px;
+    
+}
+#footer{
+    text-align: center;
+    border-top:2px solid #54728C ;
+    font-family: 'Courier New', Courier, monospace;
+}
+#sectionHeader{
+    padding-left: 25px;
+}
+.sectionText{
+    width: 580px;
+    float: left;
+    padding-left: 20px;
+}
+.sectionImage{
+    float: left;
+    padding-right: 5px;
+}
+
+a:link{
+    font-family: narnia;
+    color: #54728C;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+a:visited{
+    color:#273D59;
+}
+a:hover{
+    font-weight: bold;
+}
+
+a:active{
+    color: #54728C;
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    background-color: aliceblue;
+    border-collapse: collapse;
+    margin-left: 150px;
+    
+}
+
+thead{
+    font-weight: bold;
+    background-color: azure;
+}
+
+td{
+    border: 1px solid black;
+}
+
+tr:nth-child(even){
+    background-color: azure;
+}
