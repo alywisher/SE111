@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 - pay calculator</title>
+</head>
+<body>
+    <script>
+        var hourlyPay = Number(prompt("what is your hourly wage: "))
+        var hoursWorked = Number(prompt("How many hours did you work: "))
+        var taxRate = Number(prompt("what is the tax rate over the span of 2 weeks: "))
+
+        gross = hourlyPay * hoursWorked
+        tax = gross * (taxRate / 100)
+        tax = Math.round(tax * 100) / 100
+        net = gross - tax
+
+        console.log(`Gross pay: $${gross}`)
+        console.log(`Uncle Sam's share: $${tax}`)
+        console.log(`Net pay: $${net}`)
+
+        alert(
+            `Gross pay: $${gross}\n` + 
+            `Uncle Sam's share: $${tax}\n` +
+            `Net pay: $${net}`
+        )
+    </script>
+</body>
+</html>
